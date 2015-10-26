@@ -4,10 +4,8 @@
  </head>
  <body>
  <h1>Hello OpenShift version X</h1>
- <?php echo "Welcome {$_SERVER['REMOTE_ADDR']}"; ?>
- <p/>
  <i>
- <?php echo "Served by: {$_SERVER['SERVER_ADDR']} at {$_SERVER['REQUEST_TIME']}"; ?>
+ <?php echo "Served by: {$_SERVER['SERVER_ADDR']} at " , date("D M j G:i:s T Y"); ?>
  </i>
  </body>
 </html>

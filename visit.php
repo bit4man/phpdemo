@@ -51,11 +51,11 @@ if ($conn) {
   $sql = "SELECT id, containerip, visitstamp FROM visitors";
   $result = mysqli_query($conn, $sql);
   if (mysqli_num_rows($result) > 0) {
-    echo "<table><tr><th>Id</th><th>Container</th><th>timestamp</th></tr>"
+    echo "<table><tr><th>Id</th><th>Container</th><th>timestamp</th></tr>";
     while($row = mysqli_fetch_assoc($result)) {
-        echo "<tr><td>" . $row["id"] . "</td><td>" . $row["containerip"]. "</td><td>" . $row["visitstamp"]. "</td></tr>";
+        echo "<tr><td>" . $row["id"] . "</td><td>" . $row["containerip"] . "</td><td>" . $row["visitstamp"] . "</td></tr>";
     }
-    echo "</table>"
+    echo "</table>";
   } else {
     echo "0 results";
   }

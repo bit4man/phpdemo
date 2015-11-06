@@ -1,9 +1,19 @@
 <html>
  <head>
   <title>Hello OpenShift</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    } 
+    th, td {
+      padding: 5px;
+      text-align: left;
+    }
+  </style>
  </head>
  <body>
- <h1>Hello OpenShift version X</h1>
+ <h1>Hello OpenShift!</h1>
 <?php
 error_reporting(E_ERROR);
 
@@ -41,9 +51,11 @@ if ($conn) {
   $sql = "SELECT id, containerip, visitstamp FROM visitors";
   $result = mysqli_query($conn, $sql);
   if (mysqli_num_rows($result) > 0) {
+    echo "<table><tr><th>Id</th><th>Container</th><th>timestamp</th></tr>"
     while($row = mysqli_fetch_assoc($result)) {
-        echo $row["id"]. " - container: " . $row["containerip"]. " - time: " . $row["visitstamp"]. "<br/>";
+        echo "<tr><td>" . $row["id"] . "</td><td>" . $row["containerip"]. "</td><td>" . $row["visitstamp"]. "</td></tr>";
     }
+    echo "</table>"
   } else {
     echo "0 results";
   }

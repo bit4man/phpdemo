@@ -1,6 +1,6 @@
 <html>
  <head>
-  <title>Hello OpenShift</title>
+  <title>Hello OpenShift YAHOO</title>
  </head>
  <body>
  <h1>Hello OpenShift</h1>

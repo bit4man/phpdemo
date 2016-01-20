@@ -7,5 +7,6 @@
  <i>
  <?php echo "Served by: {$_SERVER['SERVER_ADDR']} at " , date("D M j G:i:s T Y"); ?>
  </i>
+ <p>DCVAR is <?php getenv('DCVAR') ?></p>
  </body>
 </html>

@@ -8,7 +8,7 @@
  <?php echo "Served by: {$_SERVER['SERVER_ADDR']} at " , date("D M j G:i:s T Y"); ?>
  </i>
  <p><?php echo "BCVAR is {$_ENV["BCVAR"]}";  ?></p>
- <p>MYDEMO is <?php $_ENV["MYDEMO"] ?></p>
+ <p><?php echo "MYDEMO is {$_ENV["MYDEMO"]}"; ?></p>
  <?php phpinfo(); ?>
  </body>
 </html>

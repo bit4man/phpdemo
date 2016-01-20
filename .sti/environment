@@ -1,0 +1,2 @@
+MYDEMO="Testing a build environment variable"
+echo "Content of BCVAR is \"$BCVAR\" and I am not lying"
